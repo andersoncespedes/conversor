@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        body{
+            height: 100vh;
+            background: steelblue;
+        }
+        .pesoConversor, .temperaturaConversor, .distanciaConversor{
+            width: 80%;
+            padding: 10px;
+            background-color: white;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pesoConversor">
+            <form action="" id="Conversor_peso" class="row">
+                <div class="form-group col-md-3">
+                <select name="tipo" id="" class="form-select">
+                    <option value="K-L">Kilos A Libros</option>
+                    <option value="L-K">Libras A Kilos</option>
+                </select>  
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="text" class="form-control" name="valor">
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="text" disabled name="respuesta" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <button type="submit" class="btn btn-success">Convertir</button>
+                </div>
+            </form>
+        </div>
+        <div class="temperaturaConversor">
+            <form action="" id="Conversor_temperatura" class="row">
+                <div class="form-group col-md-3">
+                    <select name="tipo" id="" class="form-select">
+                        <option value="C-F">Celsius A Fahrenheit</option>
+                        <option value="F-C">Fahrenheit A Celsius</option>
+                    </select>  
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="text" class="form-control" name="valor">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="text" disabled name="respuesta" class="form-control">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <button type="submit" class="btn btn-success">Convertir</button>
+                    </div>
+            </form>
+        </div>
+        <div class="distanciaConversor">
+            <form action="" id="Conversor_distancia" class="row">
+                <div class="form-group col-md-3">
+                    <select name="tipo" id="" class="form-select">
+                        <option value="P-M">Pies A Metros</option>
+                        <option value="M-P">Metros A Pies</option>
+                    </select>  
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="text" class="form-control" name="valor">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <input type="text" disabled name="respuesta" class="form-control">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <button type="submit" class="btn btn-success">Convertir</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="./conversor.js"></script>
+</body>
+</html>
