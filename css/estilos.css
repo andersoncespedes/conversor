@@ -1,0 +1,45 @@
+@font-face {
+    font-family: school;
+    src: url("../Good Morning.ttf");
+}
+body{
+    height: 100vh;
+    display: flex;
+    backdrop-filter: blur(2px);
+    font-family: school;
+    flex-wrap: wrap;
+    background: url("../img/OF18H90.jpg");
+    background-size: cover;
+    background-position:100%;
+}
+.pesoConversor, .temperaturaConversor, .distanciaConversor{
+    width: 80%;
+    padding: 15px;
+    background-color: white;
+    margin: auto;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    align-self: flex-end;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+.sas{
+    margin: auto;
+}
+input[type = number], input[type = text], select, option{
+    padding: 20px;
+    font-size: 20px;
+}
+.titulo{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: red; 
+    background-color: white; 
+    padding: 10px;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+}

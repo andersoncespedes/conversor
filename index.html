@@ -6,31 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <style>
-        body{
-            height: 100vh;
-            background: steelblue;
-        }
-        .pesoConversor, .temperaturaConversor, .distanciaConversor{
-            width: 80%;
-            padding: 10px;
-            background-color: white;
-            margin: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div class="container">
-        <div class="pesoConversor">
+    <div class="container sas">
+        <div class="titulo" >
+            <h1>Coversor</h1>
+        </div>
+        <div class="pesoConversor bg-dark">
             <form action="" id="Conversor_peso" class="row">
                 <div class="form-group col-md-3">
                 <select name="tipo" id="" class="form-select">
                     <option value="K-L">Kilos A Libros</option>
                     <option value="L-K">Libras A Kilos</option>
+                    <option value="K-S">Kilos A Stones</option>
+                    <option value="S-k">Stones A Kilos</option>
                 </select>  
                 </div>
                 <div class="form-group col-md-3">
-                    <input type="text" class="form-control" name="valor">
+                    <input type="number" class="form-control" placeholder="valor" name="valor">
                 </div>
                 <div class="form-group col-md-3">
                     <input type="text" disabled name="respuesta" class="form-control">
@@ -40,16 +34,18 @@
                 </div>
             </form>
         </div>
-        <div class="temperaturaConversor">
+        <div class="temperaturaConversor  border border-3 border-dark">
             <form action="" id="Conversor_temperatura" class="row">
                 <div class="form-group col-md-3">
                     <select name="tipo" id="" class="form-select">
                         <option value="C-F">Celsius A Fahrenheit</option>
                         <option value="F-C">Fahrenheit A Celsius</option>
+                        <option value="F-K">Fahrenheit A Kelvin</option>
+                        <option value="K-F">Kelvin A Fahrenheit</option>
                     </select>  
                     </div>
                     <div class="form-group col-md-3">
-                        <input type="text" class="form-control" name="valor">
+                        <input type="number" class="form-control" placeholder="valor"  name="valor">
                     </div>
                     <div class="form-group col-md-3">
                         <input type="text" disabled name="respuesta" class="form-control">
@@ -59,16 +55,19 @@
                     </div>
             </form>
         </div>
-        <div class="distanciaConversor">
+        <div class="distanciaConversor bg-dark">
             <form action="" id="Conversor_distancia" class="row">
                 <div class="form-group col-md-3">
                     <select name="tipo" id="" class="form-select">
                         <option value="P-M">Pies A Metros</option>
                         <option value="M-P">Metros A Pies</option>
+                        <option value="M-m">Metros A Millas</option>
+                        <option value="m-M">Millas A Metros</option>
+
                     </select>  
                     </div>
                     <div class="form-group col-md-3">
-                        <input type="text" class="form-control" name="valor">
+                        <input type="number" class="form-control" placeholder="valor" name="valor">
                     </div>
                     <div class="form-group col-md-3">
                         <input type="text" disabled name="respuesta" class="form-control">
@@ -79,6 +78,7 @@
             </form>
         </div>
     </div>
-    <script type="module" src="./conversor.js"></script>
+    <footer>Anderson Cespedes 2023&copy;</footer>
+    <script type="module" src="./modulos/conversor.js"></script>
 </body>
 </html>
